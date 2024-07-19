@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		278C615C2C4AD08200278EF1 /* SwiftUI_Components_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C615B2C4AD08200278EF1 /* SwiftUI_Components_ExplorerApp.swift */; };
-		278C615E2C4AD08200278EF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C615D2C4AD08200278EF1 /* ContentView.swift */; };
 		278C61602C4AD08300278EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278C615F2C4AD08300278EF1 /* Assets.xcassets */; };
 		278C61632C4AD08300278EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278C61622C4AD08300278EF1 /* Preview Assets.xcassets */; };
+		278C616F2C4AFFF300278EF1 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C616E2C4AFFF300278EF1 /* Component.swift */; };
+		278C61712C4B000E00278EF1 /* ComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C61702C4B000E00278EF1 /* ComponentViewModel.swift */; };
+		278C61732C4B002500278EF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C61722C4B002500278EF1 /* ContentView.swift */; };
+		278C61752C4B003400278EF1 /* DetailView.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C61742C4B003400278EF1 /* DetailView.swift .swift */; };
+		278C61772C4B004600278EF1 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C61762C4B004600278EF1 /* SafariView.swift */; };
+		278C617C2C4B059200278EF1 /* ComponentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C617B2C4B059200278EF1 /* ComponentSection.swift */; };
+		278C617E2C4B06F300278EF1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C617D2C4B06F300278EF1 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		278C61582C4AD08200278EF1 /* SwiftUI Components Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Components Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278C615B2C4AD08200278EF1 /* SwiftUI_Components_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Components_ExplorerApp.swift; sourceTree = "<group>"; };
-		278C615D2C4AD08200278EF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		278C615F2C4AD08300278EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278C61622C4AD08300278EF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		278C616E2C4AFFF300278EF1 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		278C61702C4B000E00278EF1 /* ComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewModel.swift; sourceTree = "<group>"; };
+		278C61722C4B002500278EF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		278C61742C4B003400278EF1 /* DetailView.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailView.swift .swift"; sourceTree = "<group>"; };
+		278C61762C4B004600278EF1 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		278C617B2C4B059200278EF1 /* ComponentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSection.swift; sourceTree = "<group>"; };
+		278C617D2C4B06F300278EF1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		278C615A2C4AD08200278EF1 /* SwiftUI Components Explorer */ = {
 			isa = PBXGroup;
 			children = (
+				278C616D2C4AFFCB00278EF1 /* View */,
+				278C616C2C4AFFC300278EF1 /* ViewModel */,
+				278C61692C4AFF2200278EF1 /* Model */,
 				278C615B2C4AD08200278EF1 /* SwiftUI_Components_ExplorerApp.swift */,
-				278C615D2C4AD08200278EF1 /* ContentView.swift */,
 				278C615F2C4AD08300278EF1 /* Assets.xcassets */,
 				278C61612C4AD08300278EF1 /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				278C61622C4AD08300278EF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		278C61692C4AFF2200278EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				278C616E2C4AFFF300278EF1 /* Component.swift */,
+				278C617B2C4B059200278EF1 /* ComponentSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		278C616C2C4AFFC300278EF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				278C61702C4B000E00278EF1 /* ComponentViewModel.swift */,
+				278C617D2C4B06F300278EF1 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		278C616D2C4AFFCB00278EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				278C61722C4B002500278EF1 /* ContentView.swift */,
+				278C61742C4B003400278EF1 /* DetailView.swift .swift */,
+				278C61762C4B004600278EF1 /* SafariView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				278C615E2C4AD08200278EF1 /* ContentView.swift in Sources */,
+				278C61732C4B002500278EF1 /* ContentView.swift in Sources */,
+				278C617C2C4B059200278EF1 /* ComponentSection.swift in Sources */,
+				278C616F2C4AFFF300278EF1 /* Component.swift in Sources */,
+				278C61712C4B000E00278EF1 /* ComponentViewModel.swift in Sources */,
+				278C617E2C4B06F300278EF1 /* DetailViewModel.swift in Sources */,
 				278C615C2C4AD08200278EF1 /* SwiftUI_Components_ExplorerApp.swift in Sources */,
+				278C61752C4B003400278EF1 /* DetailView.swift .swift in Sources */,
+				278C61772C4B004600278EF1 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Components Explorer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "<key>NSCameraUsageDescription</key>\n<string>This app requires access to the camera to allow users to capture photos of components.</string>\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +351,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Components Explorer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "<key>NSCameraUsageDescription</key>\n<string>This app requires access to the camera to allow users to capture photos of components.</string>\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
